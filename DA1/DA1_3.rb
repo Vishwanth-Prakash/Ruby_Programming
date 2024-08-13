@@ -1,6 +1,4 @@
 class Post
-  attr_accessor :title, :content, :comments, :views
-
   def initialize(title, content)
     @title = title
     @content = content
@@ -32,7 +30,7 @@ class Post
   end
 end
 
-post = Post.new("My First Blog Post", "This is the content of my first blog post.")
+post = Post.new("I'm Vishwa", "Good to see you.")
 
 post.display_post
 post.add_comment("Great post!")

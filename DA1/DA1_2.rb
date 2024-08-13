@@ -1,6 +1,4 @@
 class Movie
-  attr_accessor :title, :duration, :total_seats, :ticket_prices
-
   def initialize(title, duration, total_seats, ticket_prices)
     @title = title
     @duration = duration
@@ -45,7 +43,6 @@ end
 
 movie = Movie.new("Inception", 148, 100, { regular: 12, premium: 18 })
 
-movie.display_details
 movie.book_tickets(:regular, 5)
 movie.book_tickets(:premium, 3)
 movie.calculate_total
